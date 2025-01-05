@@ -1,0 +1,144 @@
+/* Main container */
+.product-comparison-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.product-comparison-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Flex container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual product card */
+.product-card {
+  width: 300px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card body content */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Title and Brand */
+.card-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-subheader {
+  font-size: 1.2rem; /* Slightly larger for readability */
+  font-weight: 400; /* Light font weight for elegance */
+  color: #555555; /* Subtle dark gray for a sophisticated touch */
+  margin-bottom: 15px; /* Add margin to separate from other elements */
+  text-transform: capitalize; /* Capitalize the first letter for a refined look */
+  font-family: "Roboto", sans-serif; /* Elegant sans-serif font */
+  letter-spacing: 0.5px; /* Add slight letter spacing for a polished appearance */
+}
+
+/* Platform card container */
+.platform-card {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+.platform-card:hover {
+  background-color: #e8e8e8;
+}
+
+/* Platform image */
+.card-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+/* Price and quantity */
+.price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.qty-eta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Buy button */
+.buy-button {
+  background-color: #00bfae;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.buy-button:hover {
+  background-color: #009d8a;
+}
+
+/* No products message */
+.no-products {
+  font-size: 1.2rem;
+  color: #999;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Platform-specific colors */
+.platform-card.orange {
+  background-color: #f39c12;
+}
+
+.platform-card.purple {
+  background-color: #8e44ad;
+}
+
+.platform-card.yellow {
+  background-color: #f1c40f;
+}
