@@ -1,0 +1,136 @@
+/* Base body styling with smooth dark mode */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Deep dark background */
+  color: #e0e0e0; /* Soft white text for readability */
+  line-height: 1.6; /* Improve line spacing for readability */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for dark mode */
+}
+
+/* Stylish code block */
+code {
+  font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background-color: #1e1e1e; /* Dark background for code */
+  color: #dcdcdc; /* Light text for code */
+  padding: 5px 10px; /* Add some padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  font-size: 1.1rem; /* Slightly larger code font */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add glowing effect to code blocks when hovered */
+code:hover {
+  background-color: #333; /* Slightly lighter dark background on hover */
+  color: #a3f7ff; /* Light blue text color on hover */
+  box-shadow: 0 4px 8px rgba(163, 247, 255, 0.5); /* Glowing effect */
+  transform: translateY(-2px); /* Lift the code block on hover */
+}
+
+/* Header (Optional: Can be used for navigation or title section) */
+header {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f5f5f5; /* Light text for headers */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Links with modern styling */
+a {
+  color: #4c75f3; /* Cool blue color for links */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #3562c7; /* Darker blue when hovered */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Add a subtle glow effect for better interaction */
+a:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 8px #4c75f3; /* Blue glow around the link */
+}
+
+/* Stylish button */
+button {
+  background-color: #4c75f3; /* Cool blue button background */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3562c7; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift button on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset button position on click */
+}
+
+/* Footer styling (Optional: Can be used for footer or credits) */
+footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Shadow at the top of footer */
+}
+
+/* Add glowing effect to footer */
+footer:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Stylish containers for content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Card-like design for content blocks */
+.card {
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deep shadow for depth */
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-4px); /* Slightly lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+/* Adding subtle animation to the body */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-out;
+}
