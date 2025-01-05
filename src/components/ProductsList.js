@@ -11,18 +11,8 @@ const ProductList = (props) => {
     if (search) {
       getProductsList();
     }
-  }, [search]);
-
-  const handleBuyNow = (e) => {
-    console.log(e);
-    e.preventDefault();
-  };
-
-  // const platformUrlMapping = {
-  //   Zepto: `https://www.zeptonow.com/pn`,
-  //   BlinkIt: `https://blinkit.com/prn`,
-  //   Swiggy: `https://www.swiggy.com/instamart/item`,
-  // };
+    // eslint-disable-next-line
+  }, [search, location]);
 
   const getProductsList = async () => {
     console.log(search, `from ProductList`);
@@ -44,25 +34,6 @@ const ProductList = (props) => {
       }
     } catch (error) {
       console.error("Error fetching product data:", error);
-    }
-  };
-
-  // Determine background color based on product.color or fallback to platform color
-  const getCardColor = (color, platform) => {
-    if (color) {
-      return color; // Use the product color if available
-    }
-
-    // Fallback to platform color if no product color
-    switch (platform) {
-      case "swiggy":
-        return "orange";
-      case "zepto":
-        return "purple";
-      case "blinkit":
-        return "yellow";
-      default:
-        return "gray"; // fallback color
     }
   };
 
