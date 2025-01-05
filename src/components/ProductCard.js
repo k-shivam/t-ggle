@@ -2,7 +2,7 @@ import React from "react";
 import platformImages from "./constants";
 
 const ProductCard = ({ product }) => {
-  const {
+  let {
     name,
     brand,
     quantity,
@@ -12,6 +12,10 @@ const ProductCard = ({ product }) => {
     product_id,
     store_id,
   } = product;
+
+  if (quantity.includes("undefined")) {
+    quantity = quantity.replace("undefined", "Pieces");
+  }
 
   const handleButtonClick = () => {
     console.log(`Platform: ${platform_name}`);
