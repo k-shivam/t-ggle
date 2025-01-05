@@ -1,7 +1,5 @@
 import React from "react";
 import platformImages from "./constants";
-// import "../../src/ProductList.css";
-import { useState } from "react";
 
 const ProductCard = ({ product }) => {
   const {
@@ -11,13 +9,9 @@ const ProductCard = ({ product }) => {
     price,
     discountedPrice,
     platform_name,
-    etaInfo,
-    color,
     product_id,
     store_id,
   } = product;
-
-  const [url, setUrl] = useState("");
 
   const handleButtonClick = () => {
     console.log(`Platform: ${platform_name}`);
@@ -97,16 +91,6 @@ const ProductCard = ({ product }) => {
       </button>
     </div>
   );
-};
-
-// Inline styles for simplicity
-const cardStyle = {
-  border: "1px solid #ccc",
-  borderRadius: "8px",
-  padding: "16px",
-  margin: "16px",
-  width: "250px",
-  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
 };
 
 const buttonStyle = {
