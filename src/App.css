@@ -1,0 +1,93 @@
+/* Overall body styling for a sleek dark theme */
+body {
+  background-color: #121212; /* Deep black background */
+  color: #e0e0e0; /* Soft white color for text for contrast */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Smooth, modern font */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* App container styling */
+.App {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(
+    135deg,
+    #2e2e2e,
+    #1a1a1a
+  ); /* Cool gradient background */
+  border-radius: 15px; /* Rounded corners for a modern touch */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth scale effect on hover */
+}
+
+.App:hover {
+  transform: scale(1.02); /* Slightly enlarge the app container on hover */
+}
+
+/* Header styling with a cool, glowing effect */
+.App-header {
+  background-color: #222222; /* Dark background */
+  padding: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Glowing text effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  margin-bottom: 20px;
+}
+
+/* Footer with smooth gradient and glowing text */
+footer {
+  background: linear-gradient(
+    145deg,
+    #333333,
+    #222222
+  ); /* Glowing gradient background */
+  padding: 15px;
+  color: #e0e0e0;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Glowing footer text */
+  border-top: 1px solid #444;
+}
+
+/* Cool button styles */
+button {
+  background-color: #4c75f3; /* Soft blue background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect on buttons */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3562c7; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+button:active {
+  transform: translateY(0); /* Reset position on click */
+}
+
+/* Add an animation for smooth transitions on hover */
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Applying glowing animation on App-header */
+.App-header {
+  animation: glowingText 2s infinite alternate;
+}
